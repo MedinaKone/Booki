@@ -72,8 +72,48 @@ a {
 }
 
 /****** Hebergements ***********/
-.hebergements {
+.hebergements-a-marseille {
     width: 65%;
+}
+
+.hebergements-a-marseille-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.hebergemements-a-marseille-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.hebergemements-a-marseille-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hebergemements-a-marseille-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergemements-a-marseille-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergemements-a-marseille-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergemements-a-marseille-cards .card-rating {
+    margin-bottom: 5px;
 }
 
 /****** Populaires ***********/
