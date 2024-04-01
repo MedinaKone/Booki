@@ -19,6 +19,7 @@ body {
 }
 
 .main-container {
+    min-width: 320px;
     max-width: 1440px;
     box-sizing: border-box;
 }
@@ -171,9 +172,12 @@ height: 35px;
 
 /****** Filtres ***********/
 .filtres {
+    display: inline-flex;
+    align-items: center;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
+    gap: 15px;
 }
 
 
@@ -186,9 +190,7 @@ height: 35px;
     font-size: 17px;
     cursor: pointer;
     height: 50px;
-    padding : 4px 19px 4px 19px;
-    margin-top: 15px;
-    margin-right: 15px;
+    padding : 4px 19px 4px 19px
 }
 
 .filtres-bouton {
@@ -268,7 +270,7 @@ height: 35px;
 
 .hebergements-cards .card-title {
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
 }
 
 .hebergements-cards .card-subtitle {
@@ -276,6 +278,7 @@ height: 35px;
 }
 
 .hebergements-cards .card-rating {
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
@@ -381,22 +384,23 @@ padding: 0px 20px 0px 20px;
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .card {
+        height: 100%;
+    }
+
+   .filtres {
+        display: inline-block ;
+    }
+
+    .filtres button {
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
     .hebergements-and-populaires {
     grid-template-columns: none; 
     gap: 50px;
    }
-
-   .filtres {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    }
-
-    .buttons  {
-    display: flex;  
-    flex-wrap: wrap;
-    }
-
 
     .hebergements {
         width: 100%;
@@ -410,6 +414,10 @@ padding: 0px 20px 0px 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .populaires-cards img {
+        height: unset;
     }
 
     .populaires-cards a {
@@ -428,10 +436,14 @@ padding: 0px 20px 0px 20px;
         font-size: 13px;
     }
 
+    .activites-cards {
+        max-width: 100%;
+    }
+
     .activites img {
-        width: 193.5px;
         height: 200px;
         border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
     }
 
 
