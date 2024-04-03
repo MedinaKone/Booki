@@ -1,0 +1,19 @@
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.m-0 {
+    margin: 0px ;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.bg-red {
+    background-color: red;
+}
