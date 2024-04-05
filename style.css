@@ -215,12 +215,15 @@ height: 35px;
 .logo-info {
     display: inline-flex;
     height: 22px;
-    width: 22px;
+    min-width: 22px;
     border-radius: 50%;
     border: 1px solid rgb(217, 217, 217);
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+}
+
+i.fa-solid.fa-info {
+    font-size: 10px;
 }
 
 .search-results {
@@ -509,13 +512,12 @@ padding: 0px 20px 0px 20px;
         border-top-color: transparent;
     }
 
+    .section-recherche {
+        padding: 0px 20px 0px 20px;
+    }    
     .search-bar {
         width: unset;
         position: relative;
-    }
-
-    .champ-saisie {
-        width: 100%;
     }
 
     .bouton-rechercher {
@@ -550,12 +552,20 @@ padding: 0px 20px 0px 20px;
         margin: 0;
     }
 
-     main {
-        margin: 0;
+    button.filtres-bouton {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
     }
 
-    .section-recherche {
-        margin: 0px 35px 35px 35px;
+    .filtres-bouton i {
+    font-size: 22px;
+    min-width: 22px;
+    max-width: 22px;
+    }
+
+     main {
+        margin: 0;
     }
 
     .hebergements-and-populaires {
@@ -563,6 +573,14 @@ padding: 0px 20px 0px 20px;
         grid-template-rows: auto;
         gap: 0;
         justify-content: center;
+    }
+
+    .hebergements-and-populaires .card-title {
+        font-size: 16px;
+    }
+
+    .hebergements-and-populaires .card-subtitle {
+        font-size: 14px;
     }
 
     .hebergements-and-populaires section {
@@ -573,15 +591,37 @@ padding: 0px 20px 0px 20px;
         order: 1;
     }
 
+    section.populaires {
+        padding: 30px 20px 30px 20px;
+    }
+    
+    .populaires-title {
+        margin-bottom: 15px;
+    }
+
     .populaires-cards {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         justify-content: center;
+        gap: 15px;
+    }
+
+    .populaires-cards .fa-xs.fa-solid.fa-star {
+        width: 12px;
+        height: 12px;
+        margin-right: -2.5px;
+    }
+
+    .populaires .card-rating {
+        margin-bottom: 5px;
+    }
+
+    .populaires-cards a {
     }
 
     .populaires-cards img {
         width: 111,67px;
-        height: 146px;
+        height: 136px;
     }
 
     .hebergements {
@@ -590,19 +630,101 @@ padding: 0px 20px 0px 20px;
 
     section.hebergements {
         background-color: white;
+        padding: 20px;
+    }
+
+    .hebergements > * {
+        margin-bottom: 15px;
+    }
+    
+    .hebergements-title {
+        margin-top: 15px;
     }
 
     .hebergements-cards {
         display: grid;
         grid-template-columns: auto;
+        gap: 15px;
+    }
+
+    .hebergements article.card {
+        padding: 0px 0px 15px 0px;
+    }
+
+    .hebergements-cards img {
+        width: 325px;
+        height: 114px;
+        border-radius: 20px 20px 0px 0px;
+        border : 5px  solid white ;
+    }
+
+    .hebergements .card-content {
+        padding: 0px 15px;
+        gap: 8px;
+    }
+
+    .hebergements .card-title {
+        margin : 0px 0px 3px 0px;
+    }
+
+    .hebergements .card-subtitle {
+        margin: 0
+    }
+
+    .hebergements .card-rating {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .hebergements-cards .fa-xs.fa-solid.fa-star {
+        width: 14.29px;
+        margin-right: -2px;
     }
 
     .activites-cards {
         grid-template-columns: none;
+        gap: 15px;
+    }
+
+    .activites-cards img {
+        height: 141px;
+    }
+
+    .activites-cards .card-content {
+        margin-top: -3px;
     }
 
     footer {
         grid-template-columns: none;
         margin: 0;
+        padding: 30px;
+        gap: 50px;
+    }
+
+    footer div {
+        margin: 0px;
+        padding: 0;
+    }
+
+    footer h3 {
+        margin: 0;
+        font-size: 18px;
+        height: 21px;
+    }
+
+    footer div * {
+        margin: 15px 0px;
+    }
+
+    footer div > :first-child {
+        margin-top: 0px;
+    }
+
+    footer div > :last-child {
+        margin-bottom: 0px;
+    }
+
+    footer p {
+        height: 19px;
     }
 }
