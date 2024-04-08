@@ -381,11 +381,6 @@ i.fa-solid.fa-info {
     padding: 30px;
 }
 
-.activites-title {
-    display: flex;
-    align-items: top ;
- }
-
 .activites-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
