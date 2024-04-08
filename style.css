@@ -355,6 +355,17 @@ i.fa-solid.fa-info {
     margin: 0;
 }
 
+@media (min-width: 1025px) and (max-width: 1071px){
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 12px;
+    }
+ 
+}
+
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
@@ -498,7 +509,6 @@ padding: 0px 20px 0px 20px;
             font-size: 12px;
         }
      
-        
     }
 
 
