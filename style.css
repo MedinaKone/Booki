@@ -274,8 +274,15 @@ i.fa-solid.fa-info {
     margin-bottom: 6px;
 }
 
+@media (max-width: 1439px) and (min-width: 1025px) {
+    .hebergements-cards img {
+        max-width: 250px;
+        width: 100%;
+    }
+}
+
 .hebergements-cards .card-content {
-    padding-left: 15px;
+    padding: 0px 15px 0px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -318,14 +325,20 @@ i.fa-solid.fa-info {
 }
 
 .populaires-cards img {
-    width: 33%;
+    width: 123px;
     height: 136px;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
 }
 
+@media (max-width: 1439px) {
+    .populaires-cards img {
+        max-width: 113px;
+        width: 100%;
+    }
+}
+
 .populaires-cards .card-content {
-    width: 67%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -433,8 +446,11 @@ padding: 0px 20px 0px 20px;
     }
 
     .hebergements-cards img {
-        width: 258px;
+        width: 100%;
+        max-width: 258px;
+
     }
+    
 
     a#afficher-plus {
         font-size: 18px;
@@ -473,6 +489,19 @@ padding: 0px 20px 0px 20px;
         font-size: 14px;
     }
 
+    @media (min-width: 768px) and (max-width: 828px){
+        .populaires-cards .card-title {
+            font-size: 14px;
+        }
+
+        .populaires-cards .card-subtitle {
+            font-size: 12px;
+        }
+     
+        
+    }
+
+
     .activites-title {
         line-height: 30px;
     }
@@ -483,11 +512,19 @@ padding: 0px 20px 0px 20px;
     }
 
     .activites-cards .card {
-        height: 270px;
+
+     }
+
+    .activites-cards .card-content {
+        padding: 15px 19px 15px 19px;
+        height: 36px;
+        display: flex;
+        align-items: center;
     }
 
     .activites img {
-        width: 193.5px;
+        width: 100%;
+        max-width: 193.5px;
         height: 200px;
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
@@ -695,8 +732,10 @@ padding: 0px 20px 0px 20px;
     }
 
     .hebergements-cards img {
-        width: 325px;
-        height: 114px;
+        width: 100%;
+        box-sizing: border-box;
+        max-width: unset;
+        height: 124px;
         border-radius: 20px 20px 0px 0px;
         border : 5px  solid white ;
     }
@@ -735,11 +774,15 @@ padding: 0px 20px 0px 20px;
 
     .activites-cards img {
         width: 100%;
+        max-width: unset;
+        box-sizing: border-box;
         height: 141px;
     }
 
     .activites-cards .card-content {
         margin-top: -3px;
+        padding: 20px 19px 20px 19px;
+        height: unset;
     }
 
     footer {
