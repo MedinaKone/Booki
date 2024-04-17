@@ -273,7 +273,7 @@ i.fa-solid.fa-info {
 }
 
 .hebergements-cards img {
-    width: 250px;
+    width: 240px;
     height: 114px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -282,7 +282,7 @@ i.fa-solid.fa-info {
 
 @media (max-width: 1439px) and (min-width: 1025px) {
     .hebergements-cards img {
-        max-width: 250px;
+        max-width: 240px;
         width: 100%;
     }
 }
