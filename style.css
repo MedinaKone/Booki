@@ -77,6 +77,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 35px;
+    height: 79px;
 }
 
 .logo {
@@ -100,8 +101,7 @@ nav ul li a {
 nav ul li {
     display: inline-block;
     list-style: none;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0px 25px 0px 25px;
 }
 
 nav ul li a {
@@ -113,8 +113,7 @@ nav ul li a {
 nav ul li {
     display: inline-block;
     list-style: none;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0px 25px 0px 25px;
     height: 35px;
 }
 
@@ -139,7 +138,6 @@ nav ul li {
 .champ-saisie {
     border: none;
     outline: none;
-    font-weight: bold;
     font-size: 18px;
     font-weight: 700;
     width: 150px;
@@ -168,7 +166,6 @@ nav ul li {
     font-size: 18px;
     border-radius: 0px 15px 15px 0px;
     padding: 15px 16px 15px 16px;
-    gap: 10px;
 }
 
 .bouton-rechercher-mobile {
@@ -195,7 +192,9 @@ nav ul li {
     font-size: 17px;
     cursor: pointer;
     height: 50px;
-    padding: 4px 19px 4px 19px
+    padding: 4px 19px 4px 19px;
+    display: flex;
+    align-items: center;
 }
 
 .filtres-bouton {
@@ -206,6 +205,13 @@ nav ul li {
 
 .filtres-bouton .fa-solid {
     margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
+}
+
+button.filtres-bouton span {
+    margin: 0px -1.10px 0px -1.10px;
 }
 
 .filtres :hover {
@@ -290,8 +296,7 @@ i.fa-solid.fa-info {
 }
 
 .hebergements-cards .card-title {
-    margin-top: 0px;
-    margin-bottom: 8px;
+    margin: 0px 0px 8px 0px;
 }
 
 .hebergements-cards .card-subtitle {
@@ -347,8 +352,7 @@ i.fa-solid.fa-info {
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin: 10px 0px 4px 0px;
 }
 
 .populaires-cards .card-subtitle {
@@ -436,6 +440,18 @@ footer div {
     .filtres button {
         margin-top: 20px;
         margin-right: 10px;
+        display: inline;
+        font-size: 16px;
+    }
+
+    .filtres-bouton .fa-solid {
+        vertical-align: middle;
+    }
+
+    button.filtres-bouton span {
+        margin: 0px -3px 0px -3px;
+        white-space: nowrap;
+        vertical-align: middle;
     }
 
     .hebergements-and-populaires {
@@ -454,7 +470,6 @@ footer div {
     .hebergements-cards img {
         width: 100%;
         max-width: 258px;
-
     }
 
 
@@ -621,7 +636,8 @@ footer div {
     .filtres {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        row-gap: 20px;
+        column-gap: 10px;
     }
 
     .filtres-title {
