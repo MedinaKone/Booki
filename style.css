@@ -283,7 +283,6 @@ i.fa-solid.fa-info {
 
 .hebergements-cards-row .card {
     flex-wrap: wrap;
-    padding: 0px 0px 15px 0px;
     gap: 4px;
     display: flex;
     flex-direction: column;
@@ -310,12 +309,14 @@ i.fa-solid.fa-info {
     padding: 0px 15px;
     justify-content: space-between;
     flex-grow: 1;
+    padding: 2px 15px 3px 15px;
+    line-height: 20px;
 }
 
 .hebergements-cards .card-txt {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
 }
 
 #afficher-plus {
@@ -333,10 +334,7 @@ i.fa-solid.fa-info {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 30px;
-}
-
-.populaires-cards a {
-    display: flex;
+    flex: 1;
 }
 
 .populaires-cards .card {
@@ -347,7 +345,6 @@ i.fa-solid.fa-info {
 .populaires-cards .card-content {
     display: flex;
     flex-direction: column;
-    gap: 24px;
     padding: 15px 5px 5px 15px;
     justify-content: space-between;
 }
@@ -359,17 +356,14 @@ i.fa-solid.fa-info {
 }
 
 .populaires-cards img {
-    width: 113px;
-    min-height: 136px;
+    width: 123px;
+    min-width: 123px;
+    height: 146px;
     border: white solid 5px;
     border-radius: 20px 0px 0px 20px;
 }
 
-@media (min-width:1440px) {
-    .populaires-cards img {
-        height: 136px;
-    }
-}
+
 
 /****** Activités ***********/
 .activites {
