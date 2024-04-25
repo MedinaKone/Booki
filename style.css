@@ -302,6 +302,12 @@ i.fa-solid.fa-info {
     }
 }
 
+@media (min-width:1441px) {
+    .hebergements-cards-row img {
+    width: 100%;
+    }
+}
+
 .hebergements-cards-row .card-content {
     display: flex;
     flex-direction: column;
