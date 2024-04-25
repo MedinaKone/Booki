@@ -596,12 +596,12 @@ footer p {
         font-size: 19px;
     }
 
-    nav ul li:hover {
+    header nav ul li:hover {
         color: #0065FC;
         border-bottom: 2px solid #0065FC;
     }
 
-    nav ul li {
+    header nav ul li {
         display: block;
         border-bottom: 2px solid #F2F2F2;
         position: relative;
@@ -609,13 +609,13 @@ footer p {
         padding: 0px;
     }
 
-    nav ul li a {
+    header nav ul li a {
         display: grid;
         justify-items: center;
         padding: 0px;
     }
 
-    nav ul li a:hover {
+    header nav ul li a:hover {
         border-top-color: transparent;
     }
 
