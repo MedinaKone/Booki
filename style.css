@@ -21,7 +21,6 @@ body {
 .main-container {
     min-width: 320px;
     max-width: 1440px;
-    box-sizing: border-box;
 }
 
 main {
@@ -83,6 +82,10 @@ h3 {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /****** En-tête ***********/
 header {
     display: flex;
@@ -97,31 +100,31 @@ header {
 }
 
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: #0065FC;
     border-top-color: #0065FC;
 }
 
 
-nav ul li a {
+header nav ul li a {
     border-top: 2px solid transparent;
     padding-top: 13px;
 }
 
 
-nav ul li {
+header nav ul li {
     display: inline-block;
     list-style: none;
     padding: 0px 25px 0px 25px;
 }
 
-nav ul li a {
+header nav ul li a {
     position: relative;
 }
 
 
 
-nav ul li {
+header nav ul li {
     display: inline-block;
     list-style: none;
     padding: 0px 25px 0px 25px;
@@ -206,6 +209,7 @@ nav ul li {
     padding: 4px 19px 4px 19px;
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .filtres-bouton {
@@ -215,14 +219,7 @@ nav ul li {
 }
 
 .filtres-bouton .fa-solid {
-    margin-right: 10px;
-    width: 22px;
-    height: 22px;
     font-size: 22px;
-}
-
-button.filtres-bouton span {
-    margin: 0px -1.10px 0px -1.10px;
 }
 
 .filtres :hover {
@@ -261,7 +258,6 @@ i.fa-solid.fa-info {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
-    box-sizing: border-box;
     gap: 30px;
     display: flex;
     flex-direction: column;
@@ -289,7 +285,6 @@ i.fa-solid.fa-info {
     flex-wrap: wrap;
     padding: 0px 0px 15px 0px;
     gap: 4px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -297,15 +292,14 @@ i.fa-solid.fa-info {
 
 .hebergements-cards-row img {
     width: 250.33px;
-    height: 124px;  
+    height: 124px;
     border-radius: 20px 20px 0px 0px;
     border: 5px solid white;
-    box-sizing: border-box;
 }
 
 @media (min-width:1025px) and (max-width:1439px) {
     .hebergements-cards-row img {
-            max-width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -343,7 +337,6 @@ i.fa-solid.fa-info {
 
 .populaires-cards a {
     display: flex;
-    box-sizing: border-box;
 }
 
 .populaires-cards .card {
@@ -397,7 +390,6 @@ i.fa-solid.fa-info {
 }
 
 .activites-cards a {
-    box-sizing: border-box;
     display: flex;
 }
 
@@ -411,7 +403,6 @@ i.fa-solid.fa-info {
 
 .activites-cards .card {
     padding: 0;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -426,22 +417,39 @@ i.fa-solid.fa-info {
     font-weight: bold;
     flex: 1;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
 /****** Pied de page ***********/
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     background-color: #F2F2F2;
     margin: 0px 50px;
 }
 
+footer nav {
+    display: flex;
+    flex-direction: row;
+}
+
 footer div {
-    padding: 20px ;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    flex: 1;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
+footer nav ul li {
+    padding: 0;
+    list-style-type: none;
 }
 
 footer p {
@@ -473,7 +481,6 @@ footer p {
     }
 
     button.filtres-bouton span {
-        margin: 0px -3px 0px -3px;
         white-space: nowrap;
         vertical-align: middle;
     }
@@ -764,7 +771,6 @@ footer p {
 
     .hebergements-cards img {
         width: 100%;
-        box-sizing: border-box;
         max-width: unset;
         height: 124px;
         border-radius: 20px 20px 0px 0px;
@@ -784,7 +790,7 @@ footer p {
         margin: 0
     }
 
-     .hebergements .card-rating {
+    .hebergements .card-rating {
         margin-top: 0;
         margin-bottom: 0;
         height: 13.25px;
@@ -808,7 +814,6 @@ footer p {
     .activites-cards img {
         width: 100%;
         max-width: unset;
-        box-sizing: border-box;
         height: 141px;
     }
 
@@ -840,7 +845,7 @@ footer p {
         margin: 0;
     }
 
-        footer p {
+    footer p {
         height: 19px;
     }
 }
