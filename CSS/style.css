@@ -723,7 +723,7 @@ footer p {
     }
 
     .populaires-cards img {
-        width: 111px;
+        min-width: 111px;
         height: 136px;
     }
 
