@@ -122,15 +122,12 @@ header nav ul li a {
     position: relative;
 }
 
-
-
 header nav ul li {
     display: inline-block;
     list-style: none;
     padding: 0px 25px 0px 25px;
     height: 35px;
 }
-
 
 
 /****** Section Recherche ***********/
@@ -555,8 +552,6 @@ footer p {
         gap: 30px;
     }
 
-    .activites-cards .card {}
-
     .activites-cards .card-content {
         padding: 15px 19px 15px 19px;
         height: 36px;
@@ -571,10 +566,7 @@ footer p {
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
     }
-
-
 }
-
 
 
 /* Small devices (phones, less than 768px) */
@@ -855,9 +847,6 @@ footer p {
 
     footer p {
         margin: 0;
-    }
-
-    footer p {
         height: 19px;
     }
 }
